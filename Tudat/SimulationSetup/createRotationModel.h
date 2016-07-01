@@ -87,6 +87,16 @@ public:
      */
     std::string getTargetFrame( ){ return targetFrame_; }
 
+    //! Function to rese the orientation of the base frame.
+    /*!
+     * Function to reset the orientation of the base frame.
+     * \param originalFrame New base frame orientation
+     */
+    void resetOriginalFrame( const std::string& originalFrame )
+    {
+        originalFrame_ = originalFrame;
+    }
+
 protected:
 
     //! Type of rotation model that is to be created.
